@@ -1,0 +1,33 @@
+Content:
+---
+Linux terminal commands [Not started]
+URLs [Not started]
+Jquery [Not started]
+
+VSCode [WIP]
+
+JavaScript variables (var, let + const) [Done]
+App.js [Done]
+Package.json [Done]
+Json structure [Done]
+What is NodeJS [Done]
+Nodemon [Done]
+Javascript functions (anonymous + callback) [Done]
+Express [Done]
+
+
+How to import // Not needed?
+Linking the text with the app // Won't be doing this, so not needed
+
+
+Design:
+---
+Dark palette by default
+Slick minimalism, but with modern touches (glossy buttons maybe)
+Highlight keywords on individual pages which link to their section
+
+Landing page {
+    Use grids to make a nice header for all sites?
+    Should contain Title, navbar of sorts and logo
+    Have a nice border aa?
+}

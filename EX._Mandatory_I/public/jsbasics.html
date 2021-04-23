@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+        
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./styles/myStyle.css"/>
+        <title>NodeJS</title>
+    </head>
+
+    <body>
+        <div class="container-fluid row" id="site-header">
+            <h1 class="col-sm-8"><a href="/">NodeJS notes!</a></h1>
+            <img src="./pictures/node logo.png" alt="NodeJS logo"></img>
+        </div>
+        <div class="container-fluid row">
+            <div class="sidebar">
+                <!--Move introduction to site-header-->
+                <a href="/vscode">Visual Studio Code</a>
+                <a class="active" href="/jsbasics">JavaScript basics</a>
+                <a href="/nodejs">NodeJS</a>
+                <a href="/express">Express</a>
+            </div>
+            <div class="text-content">
+                <h1>About JavaScript</h1>
+                <p>
+                    JavaScript is a scripting language used to define client-side behavior for websites.<br/>
+                    JavaScript includes concepts from both object-oriented and functional programming.<br/>
+                    Since NodeJS is inherently tied to JavaScript (hint: it's the JS in the name), you won't get far without knowing the basics of Javascript.
+                    The following informations are the basic concepts covered during the course.
+
+                </p>
+
+                <h1>Variables & Types</h1>
+                <p>
+                    Unlike more traditional coding languages, such as C++ and Java, JavaScript is not a strongly typed language.
+                    In practice, this means that we don't have to fuss over whether our variable is a String, an integer or a float when declaring them - this is decided at runtime.
+                    Note that this doesn't mean that JS is absent of types, since behind the scenes variables are still cast to things such as the inclusive Number type, or String, but as developers we don't necessarily have to worry about this.
+                </p>
+                <p>
+                    Instead of declaring a variable by type, we can use the var keyword to do it.
+
+                    var greeting = "Hello!"
+                    greeting = 3.14
+                    var greeting = "loool"
+
+                    As shown by the example, the var keyword is a bit wonky, because we can not only reassign but also redeclare our variables.
+                    Var also has global-scope, meaning it is accessible by the entire site, which is less than ideal.
+                    To put the final nail in var's theoretical coffin, variables declared in this way are also hoisted (meaning it is predeclared) and initialized as undefined at the top of the page. Especially the initialization can cause unexpected errors which can be frustrating to track down.
+                    Due to these quirks, use of var is heavily discouraged and other keywords, let and const, should be used instead.
+                </p>
+                <p>
+                    Let works a lot like var, except it corrects the issues listed above.
+                    Let variables only have block scope instead of global scope (blocks being defined by {}).
+                    You cannot redeclare a let variable. Note that you can declare a let variable of the same name in a different scope, since it will be viewed as a new variable.
+                    Let variables are also hoisted to the top of their scope, instead of the page, and are furthermore not initialized ahead of time, meaning bugs are easier to find since use of an uninitalized let variable will throw a reference error.
+                </p>
+                <p>
+                    The const keyword, in turn, works a lot like let. The big difference is that values of const variables cannot be reassigned, as they are constant (like the name implies).
+                    Const does have a quirk when it comes to working with objects, however. While you cannot reassign a new object to a const declaration, the attributes of the objects can be reassigned, and new ones can even be added (or old ones removed).
+                </p>
+
+                <h1>Functions - anonymous & callback</h1>
+                <p>
+                    In JavaScript even functions are objects. It's thanks to this quirk that we can perform functional programming in JavaScript. This is done through the use of callback functions, which often take the form of anonymous, or arrow functions.
+                </p>
+                <p>
+                    Starting with the latter, anonymous functions are simply functions without a name. They are declared like normal functions, just without a name. So function keyword, parameters and body.
+                </p>
+                <p>
+                    Arrow functions are a way to minimize the syntax of anonymous functions, named after the => used in them. Utilizing arrow functions allows us to write in-line anonymous functions, whenever another function is expecting a callback.
+                </p>
+                <p>
+                    Callbacks in the context of JavaScript means a function as a parameter in another function. The uses for callbacks are numerous, but is perhaps best illustrated with this simple timer function.
+                    setTimeout() is a JavaScript function that does something after a certain amount of time has passed, which we set in miliseconds as the second parameter. What happens after the timer has run out is determined by the first parameter, but as we're defining some behaviour we're using a function. In the case of the example, our function is simply printing a message to the console.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

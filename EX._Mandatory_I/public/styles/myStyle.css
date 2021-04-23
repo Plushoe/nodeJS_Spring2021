@@ -1,0 +1,106 @@
+html body {
+    background-color: rgb(120, 99, 94);
+    height: 100%;
+}
+
+#big {
+    height: 200px;
+    width: 200px;
+    float: right;
+    margin-right: 50px;
+}
+
+#site-header {
+    background-color: rgb(79, 66, 66);
+    color: rgb(155, 168, 145);
+    border-bottom-style:ridge;
+    border-width: 0.27em;
+}
+
+
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    background-color: #555;
+    color: rgb(155, 188, 145);
+    text-decoration: none;
+  }
+
+#site-header img {
+    height: 75px;
+    width: 125px;
+    float: right;
+    margin-right: 50px;
+}
+
+.text-content {
+    margin-left: 205px;
+    padding: 10px;
+    border-style: groove;
+    color: rgb(120, 99, 94);
+    background-color: rgb(196, 185, 183);
+    position: relative;
+    height: 90%;
+    width: 88%;
+    overflow: auto;
+}
+
+.text-content p {
+    color:rgb(31, 6, 1);
+    text-shadow: 0.1px 0.1px 1px white;
+    width: 50%;
+    float: left;
+    font-size: medium;
+}
+
+.text-content h1 {
+    font-size: large;
+    text-decoration: underline;
+    color: rgb(31, 6, 1);
+}
+
+.text-content img {
+    float: right;
+    margin-right: 200px;
+    border-color: #555;
+    border-width: 4px;
+    border-style: inherit;
+}
+
+
+.sidebar {
+    margin: 0;
+    width: 200px;
+    border-right-style: groove;
+    border-width: 5px;
+    color: rgb(150, 190, 145);
+    padding: 0;
+    background-color: rgb(69, 66, 66);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: antiquewhite;;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.sidebar a.active {
+    background-color: rgb(49, 46, 46);
+    color: greenyellow;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: greenyellow;
+  }
