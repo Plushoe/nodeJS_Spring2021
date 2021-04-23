@@ -1,0 +1,10 @@
+/*
+Color: White, semi-transparent background
+*/
+body {
+    background-image: url(..\\images\\white-and-red-cherry-blossom-flowers-3979186.jpg);
+}
+
+#layer {
+    background-color: rgba(255, 255, 255, 0.5);
+}
