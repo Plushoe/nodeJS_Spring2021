@@ -1,0 +1,18 @@
+<div id="contact-me">
+    <form method="POST", action="/api/sendMail">
+        <p>Your info</p>
+        <input type="text" name="name" required placeholder="Your name">
+        <br/>
+        <input type="text" name="company" placeholder="Company (optional)">
+        <br/>
+        <input type="text" name="email" required placeholder="Your email address">
+        <br/>
+        <br/>
+        <br/>
+        <input type="text" name="subject" required placeholder="Subject">
+        <br/>
+        <input type="textarea" name="content" cols=200 rows=10>
+        <br/>
+        <input type="submit" value="Send">
+    </form>
+</div>
