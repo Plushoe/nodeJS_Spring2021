@@ -1,10 +1,53 @@
 /*
+Aesthetic: Bubbles, Vaporwave, Glass
 Color: White, semi-transparent background
 */
+
 body {
-    background-image: url(..\\images\\white-and-red-cherry-blossom-flowers-3979186.jpg);
+    margin: inherit;
+
+    background-image: url(../images/DaView.JPG);  
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-#layer {
+#navbar {
+    margin: 0;
+    padding: 0;
+    width: 20rem;
+    height: 100%;
+    position: absolute;
+    float: left;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    border-right-width: 0.27rem;
+    border-style: solid;
+}
+
+#navbar a {
+    margin-top: 30%;
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-family: 'Exo 2', sans-serif;
+    color:brown;
+}
+
+#navbar a:hover:not(#active) {
+    color:blue;
+}
+
+#logo {
+    float: left;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 0.27rem;
+    border-style: solid;
+}
+
+#main-content {
     background-color: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    margin-left: 20.45rem;
 }
